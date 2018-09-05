@@ -1,0 +1,34 @@
+{
+    "name": "node-casperjs-aws-lambda",
+    "version": "1.0.2",
+    "description": "The bare minimum for a casperjs/phantomjs app running on Amazon Lambda.",
+    "main": "index.js",
+    "repository": "git://github.com/narainsagar/node-casperjs-aws-lambda.git",
+    "author": "Narain Sagar <narainmenghwar@gmail.com>",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/narainsagar/node-casperjs-aws-lambda/issues"
+    },
+    "homepage": "https://github.com/narainsagar/node-casperjs-aws-lambda",
+    "private": true,
+    "dependencies": {
+        "aws-sdk": "^2.1.39",
+        "casperjs": "^1.1.3"
+    },
+    "devDependencies": {
+        "mocha": "^2.3.2",
+        "node-lambda": "^0.6.1",
+        "phantomjs": "^1.9.17"
+    },
+    "scripts": {
+        "setup": "./node_modules/.bin/node-lambda setup",
+        "start": "./node_modules/.bin/node-lambda run",
+        "deploy": "./node_modules/.bin/node-lambda deploy",
+        "test": "mocha test/*"
+    },
+    "keywords": [
+        "phantomjs",
+        "aws",
+        "lambda"
+    ]
+}
